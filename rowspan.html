@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ### 📘 Simple Rowspan Example -->
+
+    <div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px;">
+    <h3 style="color: #495057;">Simple Rowspan Example</h3>
+    
+    <table style="width: 70%; border-collapse: collapse; background-color: white; box-shadow: 0 2px 6px rgba(0,0,0,0.1); color:black">
+        <thead>
+            <tr style="background-color: #007bff; color: white;">
+                <th style="padding: 10px; border: 1px solid #ddd;">Student ID</th>
+                <th style="padding: 10px; border: 1px solid #ddd;">Detail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Student 1 -->
+            <tr>
+                <td rowspan="2" style="padding: 10px; border: 1px solid #ddd; text-align:center">1</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">John Doe</td>
+            </tr>
+            <tr style="background-color: #f8f9fa;">
+                <td style="padding: 10px; border: 1px solid #ddd;">Age: 20</td>
+            </tr>
+
+            <!-- Student 2 -->
+            <tr>
+                <td rowspan="2" style="padding: 10px; border: 1px solid #ddd; text-align:center">2</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Jane Smith</td>
+            </tr>
+            <tr style="background-color: #f8f9fa;">
+                <td style="padding: 10px; border: 1px solid #ddd;">Age: 22</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
