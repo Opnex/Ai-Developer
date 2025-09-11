@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ## 🎯 Practice Exercise 8
+**Task:** Create a complete accessible webpage with:
+- Proper document structure with semantic elements
+- Accessible navigation menu
+- Contact form with validation
+- Images with proper alt text
+- Correct heading hierarchy -->
+
+  <div style="background-color: #e8f4fd; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+    <header style="margin-bottom: 20px; text-align: center;">
+        <h1 style="color: #2c3e50;">Welcome to My Accessible Website</h1>
+        <nav>
+            <ul style="list-style-type: none; padding: 0; display: flex; gap: 15px;">
+                <li><a href="#home" style="text-decoration: none; color: #1976d2;">Home</a></li>
+                <li><a href="#about" style="text-decoration: none; color: #1976d2;">About</a></li>
+                <li><a href="#contact" style="text-decoration: none; color: #1976d2;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" style="margin-bottom: 20px;">
+            <h2 style="color: #2c3e50;">Home Section</h2>
+            <p>This is the home section of the webpage. It provides an overview of the content.</p>
+            <img src="/Week_6/images/img_9077_720.jpg" alt="A descriptive text about the image" width="300" height="200">
+        </section>
+
+        <section id="about" style="margin-bottom: 20px;">
+            <h2 style="color: #2c3e50;">About Us</h2>
+            <p>This section contains information about the website and its purpose.</p>
+        </section>
+
+        <section id="contact" style="margin-bottom: 20px;">
+            <h2 style="color: #2c3e50;">Contact Us</h2>
+            <form action="#" method="post" aria-label="Contact Form">
+                <div style="margin-bottom: 10px;">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required aria-required="true" style="width: 100%; padding: 8px;">
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required aria-required="true" style="width: 100%; padding: 8px;">
+                </div>
+
+                <div style="margin-bottom: 10px;">
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" required aria-required="true" style="width: 100%; padding: 8px;"></textarea>
+                </div>
+
+                <div style="margin-top: 15px;">
+                <button type="submit" style="background-color: green; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"> Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+  </div>
+
+</body>
+</html>
