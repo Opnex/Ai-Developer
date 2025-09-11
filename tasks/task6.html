@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+</head>
+<body>
+    <!-- ## 🎯 Practice Exercise 6
+**Create a professional contact page that includes:**
+
+**Requirements:**
+- Contact form with all input types we learned
+- Company information table
+- Image gallery
+- Social media links
+- Contact details (email, phone)
+- Professional styling with inline CSS -->
+
+<div style="background-color: azure; border: 2px solid green; border-radius: 10px;">
+
+                              <!-- - Contact form with all input types we learned -->
+    <div style="background-color: white; border: 2px solid yellow; border-radius: 8px; padding: 20px 30px; margin: 24px auto; max-width: 600px;">
+        <form action="" style="margin-top: 10px;">
+            <label for="surname" style="display: block; font-weight: 500; margin-bottom: 8px; color: #b59b00;">Surname</label>
+            <input type="text" id="surname" name="surname"
+            style="width: 100%; max-width: 500px; padding: 10px; border: 1px solid #ffe066; border-radius: 5px; font-size: 1rem; margin-bottom: 10px;"
+            placeholder="Enter your surname">
+
+            <label for="firstname" style="display: block; font-weight: 500; margin-bottom: 8px; color: #b59b00;">Firstname</label>
+            <input type="text" id="firstname" name="firstname"
+            style="width: 100%; max-width: 500px; padding: 10px; border: 1px solid #ffe066; border-radius: 5px; font-size: 1rem; margin-bottom: 10px;"
+            placeholder="Enter your name">
+
+            <label for="lastname" style="display: block; font-weight: 500; margin-bottom: 8px; color: #b59b00;">Lastname</label>
+            <input type="text" id="lastname" name="lastname"
+            style="width: 100%; max-width: 500px; padding: 10px; border: 1px solid #ffe066; border-radius: 5px; font-size: 1rem; margin-bottom: 10px;"
+            placeholder="Enter your name">
+
+            <label for="email" style="display: block; font-weight: 500; margin-bottom: 8px; color: #b59b00;">Email</label>
+            <input type="email" id="email" name="email"
+            style="width: 100%; max-width: 500px; padding: 10px; border: 1px solid #ffe066; border-radius: 5px; font-size: 1rem; margin-bottom: 10px;"
+            placeholder="Enter your email">
+
+            <label for="password" style="display: block; font-weight: 500; margin-bottom: 8px; color: #b59b00;">Password</label>
+            <input type="password" id="password" name="password"
+            style="width: 100%; max-width: 500px; padding: 10px; border: 1px solid #ffe066; border-radius: 5px; font-size: 1rem; margin-bottom: 10px;"
+            placeholder="Enter your Password">
+
+            <label for="message" style="display: block; font-weight: 500; margin-bottom: 8px; color: #b59b00;">Message</label>
+            <textarea id="message" name="message"
+            style="width: 100%; max-width: 500px; padding: 10px; border: 1px solid #ffe066; border-radius: 5px; font-size: 1rem; margin-bottom: 10px;"
+            placeholder="Enter your message"></textarea>
+
+            <label for="number-input" style="display: block; font-weight: 500; margin-bottom: 8px; color: #b59b00;">Age</label>
+            <input type="number" id="number" min="1" max="100"
+            style="width: 100%; max-width: 500px; padding: 10px; border: 1px solid #ffe066; border-radius: 5px; font-size: 1rem; margin-bottom: 10px;"
+            placeholder="Enter your Password between 1-100">
+
+            <label for="date-input" style="display: block; font-weight: 500; margin-bottom: 8px; color: #b59b00;">Password</label>
+            <input type="date" id="date"
+            style="width: 100%; max-width: 500px; padding: 10px; border: 1px solid #ffe066; border-radius: 5px; font-size: 1rem; margin-bottom: 10px;">
+
+            <label for="gender" style="display: block; font-weight: 500; margin-bottom: 8px; color: #b59b00;">Gender</label>
+            <p><label><input type="radio" id="gender" name="gender" value="gender">Male</label></p>
+            <p><label><input type="radio" id="gender" name="gender" value="gender">Female</label></p>
+
+            <label for="experience" style="display: block; font-weight: 500; margin-bottom: 8px; color: #b59b00;">Experience Level</label>
+            <p><label><input type="checkbox" id="experience" name="experience" value="beginner">Beginner</label></p>
+            <p><label><input type="checkbox" id="experience" name="experience" value="intermediate">Intermediate</label></p>
+            <p><label><input type="checkbox" id="experience" name="experience" value="advanced">Advanced</label></p>
+
+            <label for="country" style="display: block; font-weight: 500; margin-bottom: 8px; color: #b59b00;">Country</label>
+            <select name="country" id="country"
+            style="width: 100%; max-width: 500px; padding: 10px; border: 1px solid #ffe066; border-radius: 5px; font-size: 1rem; margin-bottom: 10px;">
+                <option value="">Select your country</option>
+                <option value="ng">Nigeria</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+            </select>
+        </form>
+
+        <div style="margin-top: 15px;">
+            <button type="submit" style="background-color: #b59b00; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"><a href="" style="text-decoration: none;">Submit</a></button>
+            </div>
+    </div>
+
+
+                                            <!-- - Company information table -->
+
+    <div id="table" style="margin: 24px auto; max-width: 600px;">
+        <table>
+            <thead>
+                <tr>
+                    <th style="border: 1px solid green; padding: 8px; background-color: lightgreen;">Company</th>
+                    <th style="border: 1px solid green; padding: 8px; background-color: lightgreen;">Email</th>
+                    <th style="border: 1px solid green; padding: 8px; background-color: lightgreen;">Phone</th>
+                    <th style="border: 1px solid green; padding: 8px; background-color: lightgreen;">Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: 1px solid green; padding: 8px;">Tech Solutions</td>
+                    <td style="border: 1px solid green; padding: 8px;">info@techsolutions.com</td>
+                    <td style="border: 1px solid green; padding: 8px;">123-456-7890</td>
+                    <td style="border: 1px solid green; padding: 8px;">123 Tech Street, Silicon Valley</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid green; padding: 8px;">Web Innovators</td>
+                    <td style="border: 1px solid green; padding: 8px;">info@webinnovators.com</td>
+                    <td style="border: 1px solid green; padding: 8px;">987-654-3210</td>
+                    <td style="border: 1px solid green; padding: 8px;">456 Web Avenue, San Francisco</td>
+                </tr>
+
+                <tr>
+                    <td style="border: 1px solid green; padding: 8px;">Creative Minds</td>
+                    <td style="border: 1px solid green; padding: 8px;">info@creativeminds.com</td>
+                    <td style="border: 1px solid green; padding: 8px;">555-123-4567</td>
+                    <td style="border: 1px solid green; padding: 8px;">789 Creative Blvd, Los Angeles</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td style="border: 1px solid green; padding: 8px; background-color: lightgreen;" colspan="4"> 2025 Tech Solutions</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+                                            <!-- - Image gallery -->
+    <div id="gallery" style="margin: 24px auto; max-width: 600px; text-align: center;">
+        <h2 style="color: green;">Image Gallery</h2>
+        <div>
+            <img src="image1.jpg" alt="Image 1" style="width: 100%; max-width: 200px; margin: 5px; border: 2px solid green; border-radius: 5px;">
+            <img src="image2.jpg" alt="Image 2" style="width: 100%; max-width: 200px; margin: 5px; border: 2px solid green; border-radius: 5px;">
+            <img src="image3.jpg" alt="Image 3" style="width: 100%; max-width: 200px; margin: 5px; border: 2px solid green; border-radius: 5px;">
+        </div>
+    </div>
+
+                                            <!-- - Social media links & Contact details (email, phone) -->
+    <div id="contact-details" style="margin: 24px auto; max-width: 600px; text-align: center; padding-bottom: 20px;">
+        <h2 style="color: green;">Contact Us</h2>
+        <p>Email: info@techsolutions.com</p>
+        <p>Phone: 123-456-7890</p>
+    </div>
+</div>
+
+</body>
+</html>

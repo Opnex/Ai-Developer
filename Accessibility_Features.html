@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Featurest</title>
+</head>
+<body>
+    <!-- ## Accessibility Features
+Making your website accessible ensures it works for users with disabilities and improves usability for everyone. -->
+
+
+<!-- **Accessibility Features:**
+- `aria-describedby` - Links form fields to help text
+- `required` - Indicates required form fields
+- `alt` attributes - Describe images for screen readers
+- `<fieldset>` and `<legend>` - Group related form elements
+- Proper heading hierarchy - Helps navigation
+- Clear labels - Associate labels with form controls -->
+
+
+<div style="background-color: #f0fff4; padding: 20px; border-radius: 10px; margin-bottom: 20px; color:black">
+    <h3 style="color: #27ae60;">Accessibility Best Practices</h3>
+    
+    <div style="background-color: white; padding: 20px; border-radius: 8px; margin-bottom: 15px;">
+        <h4>Proper Heading Structure</h4>
+        <div style="border-left: 3px solid #27ae60; padding-left: 15px;">
+            <h1 style="font-size: 1.5em; margin: 10px 0;">Main Page Title (H1)</h1>
+            <h2 style="font-size: 1.3em; margin: 10px 0;">Section Title (H2)</h2>
+            <h3 style="font-size: 1.1em; margin: 10px 0;">Subsection Title (H3)</h3>
+            <p style="margin: 10px 0; color: #666;">Always use headings in order - don't skip levels!</p>
+        </div>
+    </div>
+    
+    <div style="background-color: white; padding: 20px; border-radius: 8px; margin-bottom: 15px;">
+        <h4>Form Accessibility</h4>
+        <form>
+            <div style="margin-bottom: 15px;">
+                <label for="accessible-name" style="display: block; margin-bottom: 5px; font-weight: bold;">
+                    Full Name (Required)
+                </label>
+                <input type="text" id="accessible-name" name="accessible-name" required
+                       style="width: 70%; padding: 8px; border: 2px solid #ddd; border-radius: 4px;"
+                       aria-describedby="name-help"
+                       placeholder="Enter your full name">
+                <p id="name-help" style="font-size: 12px; color: #666; margin-top: 5px;">
+                    Please enter your first and last name
+                </p>
+            </div>
+            
+            <fieldset style="border: 2px solid #ddd; border-radius: 5px; padding: 15px; margin-bottom: 15px;">
+                <legend style="font-weight: bold; color: #2c3e50;">Preferred Contact Method</legend>
+                <div>
+                    <p><label><input type="radio" name="contact" value="email"> Email</label></p>
+                    <p><label><input type="radio" name="contact" value="phone"> Phone</label></p>
+                    <p><label><input type="radio" name="contact" value="mail"> Postal Mail</label></p>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    
+    <div style="background-color: white; padding: 20px; border-radius: 8px; margin-bottom: 15px;">
+        <h4>Images with Alt Text</h4>
+        <img src="https://via.placeholder.com/200x150/27ae60/ffffff?text=Accessible+Image" 
+             alt="A green placeholder image demonstrating proper alt text usage"
+             style="border-radius: 5px; margin-bottom: 10px;">
+        <p style="font-size: 14px; color: #666;">
+            <strong>Alt text:</strong> "A green placeholder image demonstrating proper alt text usage"
+        </p>
+    </div>
+</div>
+</body>
+</html>
