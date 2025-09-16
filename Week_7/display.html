@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+
+<style>
+    .display-demo {
+        background-color: #f8f9fa;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        color:black;
+    }
+    
+    .demo-element {
+        padding: 8px 12px;
+        margin: 5px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 4px;
+    }
+    
+    .block-demo {
+        display: block;
+        background-color: #dc3545;
+    }
+    
+    .inline-demo {
+        display: inline;
+        background-color: #28a745;
+    }
+    
+    .inline-block-demo {
+        display: inline-block;
+        background-color: #ffc107;
+        color: black;
+        width: 120px;
+        text-align: center;
+    }
+    
+    .navigation-demo {
+        background-color: #343a40;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .nav-item {
+        display: inline-block;
+        padding: 8px 16px;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-right: 5px;
+    }
+    
+    .nav-item:hover {
+        background-color: #007bff;
+        color: yellow;
+    }
+</style>
+
+<body>
+    
+    <h3>Display Properties in Action</h3>
+
+<div class="display-demo">
+    <h4>Block Elements</h4>
+    <div class="demo-element block-demo">Block Element 1 (full width)</div>
+    <div class="demo-element block-demo">Block Element 2 (full width)</div>
+</div>
+
+<div class="display-demo">
+    <h4>Inline Elements</h4>
+    <span class="demo-element inline-demo">Inline 1</span>
+    <span class="demo-element inline-demo">Inline 2</span>
+    <span class="demo-element inline-demo">Inline 3</span>
+    <p><small>Notice how inline elements flow together on the same line</small></p>
+</div>
+
+<div class="display-demo">
+    <h4>Inline-Block Elements</h4>
+    <div class="demo-element inline-block-demo">Item 1</div>
+    <div class="demo-element inline-block-demo">Item 2</div>
+    <div class="demo-element inline-block-demo">Item 3</div>
+    <p><small>Inline-block flows horizontally but accepts width and height</small></p>
+</div>
+
+<div class="display-demo">
+    <h4>Practical Example: Navigation Menu</h4>
+    <nav class="navigation-demo">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">About</a>
+        <a href="#" class="nav-item">Services</a>
+        <a href="#" class="nav-item">Contact</a>
+    </nav>
+    <p><small>Navigation items use inline-block for horizontal layout with padding control</small></p>
+</div>
+
+</body>
+</html>

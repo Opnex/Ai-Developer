@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning2</title>
+</head>
+
+<style>
+    .sticky-demo-container {
+        background-color: #f8f9fa;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        height: 400px;
+        overflow-y: scroll;
+        border: 2px solid #dee2e6;
+        color: black;
+    }
+    
+    .sticky-header {
+        position: sticky;
+        top: 0;
+        background-color: #007bff;
+        color: white;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .content-section {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        height: 150px;
+    }
+    
+    .content-section h4 {
+        margin-top: 0;
+        color: #2c3e50;
+    }
+</style>
+
+<body>
+    
+    <h3>Sticky Positioning Demo</h3>
+
+<div class="sticky-demo-container">
+    <div class="sticky-header">
+        Sticky Header - Scroll down and watch me stick!
+    </div>
+    
+    <div class="content-section">
+        <h4>Section 1</h4>
+        <p>This is the first section of content. Notice how the header above stays "sticky" at the top when you scroll down through this container.</p>
+        <p>Sticky positioning is perfect for navigation bars, table headers, and section dividers.</p>
+    </div>
+    
+    <div class="content-section">
+        <h4>Section 2</h4>
+        <p>Here's more content to scroll through. The sticky header should remain visible at the top of the scrollable container.</p>
+        <p>Unlike fixed positioning, sticky elements stay within their parent container.</p>
+    </div>
+    
+    <div class="content-section">
+        <h4>Section 3</h4>
+        <p>Keep scrolling to see the sticky behavior in action. This is commonly used in modern web design for improved user experience.</p>
+        <p>Sticky positioning requires a threshold value (top, bottom, left, or right) to work properly.</p>
+    </div>
+    
+    <div class="content-section">
+        <h4>Section 4</h4>
+        <p>Final section of content. The sticky header will disappear when you reach the end of its containing element.</p>
+        <p>This makes sticky positioning perfect for section-based layouts and long-form content.</p>
+    </div>
+</div>
+
+<p><small><strong>Scroll within the gray container above to see sticky positioning in action!</strong></p>
+
+</body>
+</html>
