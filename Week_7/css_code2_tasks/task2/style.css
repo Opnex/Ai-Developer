@@ -45,6 +45,7 @@ header p {
             border-radius: 10px;
             padding: 1.5rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            text-align: start;
         }
 
 .left-sidebar {
@@ -71,6 +72,23 @@ header p {
     margin: 10px;
     padding: 10px;
     border-bottom: 0.1px solid rgb(190, 189, 189);
+    font-size: 20px;
+}
+
+.content-grid {
+    border: 2px solid green;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 1.5rem;
+}
+
+.card {
+    border: 2px solid yellow;
+    /* margin: 10px; */
+    padding: 20px;
+    margin: 5px;
+
 }
 
 
@@ -83,9 +101,7 @@ main {
    
 }
 
-.content-grid {
-    display: flex;
-}
+
 
 main h2 {
     text-align: start;
