@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Explained</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        header {
+            background: #4e54c8;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        
+        .explanation {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+        
+        .example {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        
+        h2 {
+            color: #4e54c8;
+            margin: 20px 0 15px;
+            border-bottom: 2px solid #4e54c8;
+            padding-bottom: 8px;
+        }
+        
+        h3 {
+            color: #2575fc;
+            margin: 15px 0 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .code {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+        
+        .selector {
+            color: #a6e22e;
+        }
+        
+        .property {
+            color: #66d9ef;
+        }
+        
+        .value {
+            color: #ae81ff;
+        }
+        
+        .comment {
+            color: #75715e;
+        }
+        
+        .interactive-demo {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin: 15px 0;
+        }
+        
+        .demo-element {
+            width: 100%;
+            height: 150px;
+            background: #4e54c8;
+            margin: 15px 0;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .controls {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .control-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        input[type="range"], select {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .reset-btn {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+        
+        .reset-btn:hover {
+            background: #ee5253;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #4e54c8;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSS Styling Explained</h1>
+            <p class="subtitle">Learn CSS concepts with interactive examples</p>
+        </header>
+        
+        <div class="content">
+            <div class="explanation">
+                <h2>What is CSS?</h2>
+                <p>CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.</p>
+                
+                <h2>CSS Syntax</h2>
+                <p>CSS consists of selectors and declaration blocks:</p>
+                <div class="code">
+                    <span class="selector">selector</span> {<br>
+                    &nbsp;&nbsp;<span class="property">property</span>: <span class="value">value</span>;<br>
+                    }
+                </div>
+                
+                <h2>Common CSS Properties</h2>
+                <h3>Color Properties</h3>
+                <p>Control text and background colors:</p>
+                <div class="code">
+                    <span class="selector">.element</span> {<br>
+                    &nbsp;&nbsp;<span class="property">color</span>: <span class="value">red</span>; <span class="comment">/* Text color */</span><br>
+                    &nbsp;&nbsp;<span class="property">background-color</span>: <span class="value">#ffffff</span>; <span class="comment">/* Background color */</span><br>
+                    }
+                </div>
+                
+                <h3>Box Model</h3>
+                <p>Every element is a box with content, padding, border, and margin:</p>
+                <div class="code">
+                    <span class="selector">.box</span> {<br>
+                    &nbsp;&nbsp;<span class="property">width</span>: <span class="value">200px</span>;<br>
+                    &nbsp;&nbsp;<span class="property">height</span>: <span class="value">100px</span>;<br>
+                    &nbsp;&nbsp;<span class="property">padding</span>: <span class="value">20px</span>; <span class="comment">/* Space inside the border */</span><br>
+                    &nbsp;&nbsp;<span class="property">border</span>: <span class="value">2px solid black</span>; <span class="comment">/* Border around padding */</span><br>
+                    &nbsp;&nbsp;<span class="property">margin</span>: <span class="value">10px</span>; <span class="comment">/* Space outside the border */</span><br>
+                    }
+                </div>
+            </div>
+            
+            <div class="example">
+                <h2>Interactive Demo</h2>
+                <p>Use the controls below to style the element:</p>
+                
+                <div class="interactive-demo">
+                    <div id="demoElement" class="demo-element">
+                        Styled Element
+                    </div>
+                    
+                    <div class="controls">
+                        <div class="control-group">
+                            <label for="bgColor">Background Color</label>
+                            <input type="color" id="bgColor" value="#4e54c8">
+                        </div>
+                        
+                        <div class="control-group">
+                            <label for="width">Width</label>
+                            <input type="range" id="width" min="100" max="300" value="150">
+                        </div>
+                        
+                        <div class="control-group">
+                            <label for="height">Height</label>
+                            <input type="range" id="height" min="100" max="300" value="150">
+                        </div>
+                        
+                        <div class="control-group">
+                            <label for="borderRadius">Border Radius</label>
+                            <input type="range" id="borderRadius" min="0" max="50" value="8">
+                        </div>
+                        
+                        <div class="control-group">
+                            <label for="fontSize">Font Size</label>
+                            <input type="range" id="fontSize" min="14" max="40" value="18">
+                        </div>
+                        
+                        <div class="control-group">
+                            <label for="fontFamily">Font Family</label>
+                            <select id="fontFamily">
+                                <option value="Arial, sans-serif">Arial</option>
+                                <option value="'Times New Roman', serif">Times New Roman</option>
+                                <option value="'Courier New', monospace">Courier New</option>
+                                <option value="Georgia, serif">Georgia</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button class="reset-btn" onclick="resetStyles()">Reset Styles</button>
+                </div>
+                
+                <h2>CSS Selectors</h2>
+                <p>Selectors are patterns used to select the element(s) you want to style:</p>
+                <div class="code">
+                    <span class="comment">/* Element selector */</span><br>
+                    <span class="selector">p</span> { <span class="property">color</span>: <span class="value">blue</span>; }<br><br>
+                    
+                    <span class="comment">/* Class selector */</span><br>
+                    <span class="selector">.className</span> { <span class="property">font-size</span>: <span class="value">16px</span>; }<br><br>
+                    
+                    <span class="comment">/* ID selector */</span><br>
+                    <span class="selector">#idName</span> { <span class="property">margin</span>: <span class="value">10px</span>; }<br><br>
+                    
+                    <span class="comment">/* Attribute selector */</span><br>
+                    <span class="selector">a[target="_blank"]</span> { <span class="property">color</span>: <span class="value">purple</span>; }
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Created with ❤️ for learning CSS | 2023</p>
+        </footer>
+    </div>
+
+    <script>
+        // Get the demo element and controls
+        const demoElement = document.getElementById('demoElement');
+        const controls = {
+            bgColor: document.getElementById('bgColor'),
+            width: document.getElementById('width'),
+            height: document.getElementById('height'),
+            borderRadius: document.getElementById('borderRadius'),
+            fontSize: document.getElementById('fontSize'),
+            fontFamily: document.getElementById('fontFamily')
+        };
+        
+        // Add event listeners to all controls
+        Object.keys(controls).forEach(key => {
+            controls[key].addEventListener('input', updateStyles);
+        });
+        
+        // Update styles based on control values
+        function updateStyles() {
+            demoElement.style.backgroundColor = controls.bgColor.value;
+            demoElement.style.width = `${controls.width.value}px`;
+            demoElement.style.height = `${controls.height.value}px`;
+            demoElement.style.borderRadius = `${controls.borderRadius.value}px`;
+            demoElement.style.fontSize = `${controls.fontSize.value}px`;
+            demoElement.style.fontFamily = controls.fontFamily.value;
+        }
+        
+        // Reset all styles to default
+        function resetStyles() {
+            controls.bgColor.value = '#4e54c8';
+            controls.width.value = 150;
+            controls.height.value = 150;
+            controls.borderRadius.value = 8;
+            controls.fontSize.value = 18;
+            controls.fontFamily.value = 'Arial, sans-serif';
+            
+            updateStyles();
+        }
+    </script>
+</body>
+</html>
