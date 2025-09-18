@@ -1,14 +1,4 @@
-## 🎯 Practice Exercise 2
+# HEADER
 
-**Task:** Create a "Holy Grail" layout using Flexbox
-
-**Requirements:**
-- Header at the top (full width)
-- Footer at the bottom (full width)  
-- Three-column middle section: sidebar, main content, sidebar
-- Main content should grow to fill available space
-- Should work on different screen sizes
-- Use proper colors and spacing for visual appeal
-
-**Bonus:**
-- Make it responsive (sidebars stack on smaller screens)
+## Complete page for task 2
+<img width="1909" height="957" alt="Image" src="https://github.com/user-attachments/assets/faa23c72-d391-473d-b521-f91a4daf9ac8" />
