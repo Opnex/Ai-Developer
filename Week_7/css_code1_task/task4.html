@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple About Me Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f5f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .card {
+            width: 100%;
+            max-width: 500px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #4e73df;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #2e384d;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            color: #4e73df;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .description {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .divider {
+            height: 2px;
+            background-color: #eaeaea;
+            margin: 25px 0;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .skill {
+            background-color: #f0f5ff;
+            color: #4e73df;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .social {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #4e73df;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .social:hover {
+            background-color: #2e59d9;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ## 🎯 Practice Exercise 4
+
+**Task:** Create a styled "About Me" card using CSS selectors, colors, typography, and the box model.
+
+**Requirements:**
+- Use a class selector for the card container
+- Apply a background color using any color method (hex, rgb, etc.)
+- Style the heading with custom font family and size
+- Use different font weights for emphasis
+- Apply proper spacing with padding and margin
+- Add a border with rounded corners
+- Include multiple paragraphs with good line height
+- Make the text well-aligned and readable
+
+**Bonus Challenges:**
+- Use different text transformations
+- Add some text decoration for links or emphasis
+- Experiment with different font combinations
+- Create visual hierarchy with font sizes -->
+
+    <div class="card">
+        <img src="/Week_7/css_code1_task/image/opnex-img.jpg" alt="Profile Picture" class="profile-img">
+        
+        <h1>Thomas Opeyemi Stephen Opnex</h1>
+        <p class="title">Web Developer & Designer</p>
+        
+        <p class="description">
+            Hello! I'm a passionate web developer. I love creating beautiful and functional websites using HTML, CSS, and JavaScript.
+        </p>
+        
+        <div class="divider"></div>
+        
+        <h2>My Skills</h2>
+        <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+        </div>
+    </div>
+</body>
+</html>

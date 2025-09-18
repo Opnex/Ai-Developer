@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+</head>
+<body>
+    <!-- ## 🎯 Practice Exercise 2
+    **Task:** Create a styled "About Me" card using CSS selectors and typography properties.
+    **Requirements:**
+    - Use different heading levels with custom fonts
+    - Apply colors using different CSS color methods
+    - Use classes for reusable styles
+    - Include proper spacing with padding and margin
+    - Make it visually appealing with borders and backgrounds -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple About Me Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f5f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .card {
+            width: 100%;
+            max-width: 500px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #4e73df;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #2e384d;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            color: #4e73df;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .description {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .divider {
+            height: 2px;
+            background-color: #eaeaea;
+            margin: 25px 0;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .skill {
+            background-color: #f0f5ff;
+            color: #4e73df;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="/Week_7/css_code1_task/image/opnex-img.jpg" alt="Profile Picture" class="profile-img">
+        
+        <h1>Thomas Opeyemi Stephen</h1>
+        <p class="title">Web Developer & Designer</p>
+        
+        <p class="description">
+            Hello! I'm a passionate web developer. I love creating beautiful and functional websites using HTML, CSS, and JavaScript.
+        </p>
+        
+        <div class="divider"></div>
+        
+        <h2>My Skills</h2>
+        <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>
