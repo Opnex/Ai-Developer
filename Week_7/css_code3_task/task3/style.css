@@ -79,26 +79,22 @@
             color: var(--primary-color);
         }
 
-        /* Hero Section */
+
         .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding-top: 80px;
-            position: relative;
+            margin-top: 100px;
+            display: flex;                  
+            flex-direction: column;         
+            align-items: center;            
+            justify-content: center;        
+            padding: 80px;
             overflow: hidden;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url(/Week_7/css_code2_tasks/tasks1/image/software-developer.jpg);
+            border-radius: 10px;
+            min-height: 500px;              
+            text-align: center;             
         }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(52, 152, 219, 0.1) 0%, rgba(46, 204, 113, 0.1) 100%);
-            z-index: -1;
-        }
 
         .hero-content {
             max-width: 600px;
@@ -107,13 +103,13 @@
         .hero h1 {
             font-size: clamp(2.5rem, 5vw, 4rem);
             margin-bottom: 1rem;
-            color: var(--text-color);
+            color: white;
         }
 
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
-            color: var(--text-color);
+            color: white;
         }
 
         .btn {
